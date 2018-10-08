@@ -24,9 +24,9 @@
     "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "compile:server": "tsc -p server.tsconfig.json",
-    "generate:prerender": "cd dist && node prerender",
-    "serve:prerender": "cd dist/browser && http-server",
-    "serve:ssr": "node dist/server"
+    "generate:prerender": "cd functions/dist && node prerender",
+    "serve:prerender": "cd functions/dist/browser && http-server",
+    "serve:ssr": "node functions/dist/server"
   },
   "pre-commit": [],
   "private": true,
@@ -56,6 +56,8 @@
     "@types/node": "^8.0.30",
     "codelyzer": "^4.0.2",
     "express": "^4.15.2",
+    "firebase-admin": "^6.0.0",
+    "firebase-functions": "^2.0.5",
     "http-server": "^0.10.0",
     "pre-commit": "^1.2.2",
     "reflect-metadata": "^0.1.10",

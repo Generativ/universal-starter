@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "outDir": ".",
+    "sourceMap": true,
+    "target": "es2015",
+  },
+  "compileOnSave": true,
+  "files": [
+    "src/index.ts"
+  ]
+}
